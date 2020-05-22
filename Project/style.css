@@ -5,6 +5,7 @@
 }
 
 .wrapper {
+    position: relative;
     color: #f6f4f1;
 }
 
@@ -91,7 +92,7 @@ span:nth-child(3) {
     padding-left: 25px;
     display: flex;
     justify-content: space-between;
-    height: calc(100vh - 110px);
+    height: auto;
 }
 
 .scroll__wrap {
@@ -100,11 +101,12 @@ span:nth-child(3) {
 
 .scroll {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     cursor: pointer;
 }
 
 .scroll a {
+    margin-bottom: 40px;
     text-decoration: none;
     writing-mode: vertical-rl;
     left: 19%;
@@ -125,6 +127,7 @@ span:nth-child(3) {
     width: 2px;
     height: 20px;
     bottom: 220px;
+    bottom: 10px;
     background-color: #c35b0a;
 }
 
@@ -139,31 +142,36 @@ span:nth-child(3) {
 }
 
 .big-image {
-    height: 100vh;
     position: relative;
 }
 
 .image {
-    
     width: 100%;
+}
+
+.caption__wrapp {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    bottom: 30%;
 }
 
 .caption {
     position: absolute;
+    width: 55%;
+    right: 0;
+    bottom: 30%;
+    height: 80px;
     background-image: url(./bg.png);
     background-position: center;
     background-size: cover;
-    width: 55%;
-    height: 80px;
-    right: 0;
-    bottom: 40%;
 }
 
 .name1 {
     position: absolute;
     bottom: 40px;
     right: 36%;
-    font-size: 5em;
+    font-size: 80px;
     color: #f6f4f1;
     font-family: "Encode Sans Expanded";
     font-weight: 300;
@@ -173,7 +181,7 @@ span:nth-child(3) {
     position: absolute;
     bottom: -40px;
     right: 50%;
-    font-size: 5em;
+    font-size: 80px;
     color: #c35b0a;
     font-family: "Encode Sans Expanded";
     font-weight: 300;
@@ -186,9 +194,3 @@ span:nth-child(3) {
     justify-content: center;
     align-items: flex-start;
 }
-
-/* @media only screen and (max-width: 470px) {
-    .img {
-        width: 90%;
-    }
-} */
